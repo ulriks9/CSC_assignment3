@@ -202,15 +202,6 @@ def manipulate(order, profile, k):
                     order_works = False
                     break
 
-        # for k in range(len(profile)):
-        #     if markings[k] == 1:
-        #         if not len(profile[k]) == 0:
-        #             if profile[k][-1] == i:
-        #                 markings[k] = 0
-
-        #                 if VERBOSE:
-        #                     print("INFO: Vote {} has been unmarked.".format(k))
-        
         # Eliminate ci:
         profile = eliminate_candidate(i, profile)
     
